@@ -1,8 +1,8 @@
 Hi Github community,
-I am still pretty new to it and as my first project at Hyper Isalnd I wanted to create a program that shows if I go to the Casino and play Roulette with infinite money and I apply the martingale system will I be able to win and quit my studies?
-The answer is NO unfortunately, at the end the Casino will win.
-If you use my code you can choose how much money you have available for 365 days and in each day you play/spin 50 times and the starting bet is 1.
-every time you win the bet goes back to its original value (1), if you loose you will double up it in the next spin (for example -1,-2,-4,-8,-16,-32,-64,-128...).
+Does the Martingale system actually works?
+With this code you can choose how much money you have available, you will spin the roulette 50 times for 365 day with the starting bet is 1.
+Every time you win the bet goes back to its original value (1), if you loose you will double up it in the next spin (for example -1,-2,-4,-8,-16,-32,-64,-128...).
+
 It is also possibile to te exports the result to a excel file.
 
 If you are using pycham, to do so, you need to create a new Excel file where your pycharm file is created and name it "data casino" (for example)
