@@ -14,12 +14,17 @@ import pandas as pd
 
 
 
+
+
 At the bottom of coding you will need to add:
 
 
 data = pd.DataFrame({'winnings': [winning_list]})
+
 datatoexcel = pd.ExcelWriter("data casino.xlsx", engine='xlsxwriter')
+
 data.to_excel(datatoexcel, sheet_name="Sheet1")
+
 datatoexcel.save()
 
 
