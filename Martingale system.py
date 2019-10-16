@@ -1,5 +1,4 @@
 import random
-import pandas as pd
 
 bank = int(input('How much money do you have:'))
 inp = bank
@@ -10,7 +9,6 @@ winning_list = []
 
 for x in range(365):
     winnings = 0
-
     bet = 1
     bank = inp
 
@@ -21,6 +19,7 @@ for x in range(365):
 
             print()
             break
+
         else:
             choice = random.randint(19, 36)
             result = random.randint(0, 36)
@@ -28,21 +27,14 @@ for x in range(365):
             if result <= 18:
                 bank -= bet
                 winnings -= bet
-
-
-
                 bet = bet * 2
+
             else:
+
                 bank += bet
                 winnings += bet
-
-
                 bet = 1
 
     winning_list.append(winnings)
 
 print("You have made", winning_list, "dollars")
-data = pd.DataFrame({'winnings': [winning_list]})
-datatoexcel = pd.ExcelWriter("data casino.xlsx", engine='xlsxwriter')
-data.to_excel(datatoexcel, sheet_name="Sheet1")
-datatoexcel.save()
